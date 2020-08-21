@@ -1,30 +1,135 @@
 body {
-    padding: 0;
-    margin: 0;
-    font-family: sans-serif;
-  }
-  h1, h2, h3, p {
-    padding: 5px;
-  }
-  .aboutHeader{
-      /* color: aqua; */
-  }
-  #txFlag{
-      text-align: right;
-  }
-  #txMap{
-      text-align: left;
-  }
-  .myImg {
+  padding: 0;
+  margin: 0;
+  font-family: 'Times New Roman', Times, serif;
+}
+h1, h2, h3, p {
+  /* padding: 5px; */
+}
+.navbar-right{
+  float: right;
+ }
+.navbar-right .rightLinks{
+  font-size: 20px;
+  background-color: aqua;
+}
+#navbar{
+  height: 100px;
+  border-bottom: 1px solid black;
+}
+#navbar a {
+  color: blue;
+  text-decoration: none;
+}
+
+#navbar .navbar-right a.active {
+  color: black;
+}
+
+#navbar #logoText{
+  color: black;
+  padding-top: 20px;
+  padding-left: 95px;
+}
+.logo-image img{
+  width: 80px;
+  float: left;
+}
+.aboutHeader{
+    text-align: center;
+}
+
+IMG.txFlag{
+    float: left;
+    padding: 70px;
     width: 10%;
+}
+IMG.txMap{
+    float: right;
+    padding: 70px;
+    width: 10%;
+}
+
+.flagBlock{
+  font-size: 22px;
+}
+
+.flagMap{
+  font-size: 22px;
+  padding-left: 70px;
+}
+
+IMG.txSeal{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 15%;
+}
+
+.factsHeader{
+  text-align: center;
+  font-size: 40px;
+}
+
+#txFactsList{
+  padding: 100px;
+  padding-top: 30px;
+  font-size: 25px;
+}
+
+@media screen and (max-width: 1023px) {
+  .myImg {
+    width: 50%;
   }
-  @media screen and (max-width: 1023px) {
-    .myImg {
-      width: 25%;
-    }
+  IMG.txSeal {
+    width: 50%;
   }
-  @media screen and (max-width: 767px) {
-    .myImg {
-      width: 40%;
-    }
-  } 
+  IMG.txFlag {
+    float: none;
+    width: 80%;
+  }
+  IMG.txMap {
+    float:none;
+    width: 80%;
+  }
+  .flagBlock{
+    padding: 20px;
+  }
+  .flagMap{
+    padding: 20px;
+  }
+  #txFactsList{
+    font-size: 23px;
+  }
+  .factsHeader{
+    font-size: 38px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .myImg {
+    width: 40%;
+  }
+  IMG.txSeal {
+    width: 40%;
+  }
+  IMG.txFlag {
+    float: none;
+    width: 70%;
+  }
+  IMG.txMap {
+    float: none;
+    width: 70%;
+  }
+  .flagBlock{
+    padding: 20px;
+  }
+  .flagMap{
+    padding: 20px;
+  }
+  #txFactsList{
+    font-size: 21px;
+  }
+  .factsHeader{
+    font-size: 35px;
+  }
+} 

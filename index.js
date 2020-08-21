@@ -52,7 +52,7 @@
         for(let i = 0; i < factsJson.facts.length; i++){
             factsTextList += "<li>";
             factsTextList += factsJson.facts[i];
-            factsTextList += "</li>";
+            factsTextList += "</li><br>";
         }
     };
 
@@ -61,13 +61,16 @@
     console.log(factsTextList);
     
     const About = {
-        template : '<div>' + 
-        '<vue-responsive-image id="txSeal"  \n  :width-on-screen="50" \n  :width-on-screen-tablet="75" \n  :width-on-screen-smartphone="100" \n  :image-url="' + "'/assets/tx-seal.png'" +   '"\n:image-ratio="' + '16/9' +  '"\n:alt="' + "'test1'" +  '"\n:image-class="' + "'myImg'" +  '"\n:mode="' + "'all'" + '"\n></vue-responsive-image>  ' 
-        + '<h1 class="aboutHeader">About Texas</h1> \n' + 
-        '<vue-responsive-image id="txFlag"  \n  :width-on-screen="50" \n  :width-on-screen-tablet="75" \n  :width-on-screen-smartphone="100" \n  :image-url="' + "'/assets/tx-flag.png'" +   '"\n:image-ratio="' + '16/9' +  '"\n:alt="' + "'test1'" +  '"\n:image-class="' + "'myImg'" +  '"\n:mode="' + "'all'" + '"\n></vue-responsive-image>  '
-        + line1Text + '<br>' + line2Text + '<br>' +  
-        '<vue-responsive-image id="txMap"  \n  :width-on-screen="50" \n  :width-on-screen-tablet="75" \n  :width-on-screen-smartphone="100" \n  :image-url="' + "'/assets/tx-map.jpg'" +   '"\n:image-ratio="' + '16/9' +  '"\n:alt="' + "'test1'" +  '"\n:image-class="' + "'myImg'" +  '"\n:mode="' + "'all'" + '"\n></vue-responsive-image>  '
-        + line3Text + '<br>' + line4Text + '<br>'
+        template : '<div class="aboutSection">' + 
+        '<img src="assets/tx-seal.png" class="txSeal">'
+        // '<vue-responsive-image id="txSeal"  \n  :width-on-screen="50" \n  :width-on-screen-tablet="75" \n  :width-on-screen-smartphone="100" \n  :image-url="' + "'/assets/tx-seal.png'" +   '"\n:image-ratio="' + '16/9' +  '"\n:alt="' + "'test1'" +  '"\n:image-class="' + "'myImg'" +  '"\n:mode="' + "'all'" + '"\n></vue-responsive-image>  ' 
+        + '<br><h1 class="aboutHeader">About Texas</h1> \n' + 
+        '<div class="flagBlock"><img src="assets/tx-flag.png" class="txFlag"><br>'
+        // '<vue-responsive-image id="txFlag"  \n  :width-on-screen="50" \n  :width-on-screen-tablet="75" \n  :width-on-screen-smartphone="100" \n  :image-url="' + "'/assets/tx-flag.png'" +   '"\n:image-ratio="' + '16/9' +  '"\n:alt="' + "'test1'" +  '"\n:image-class="' + "'myImg'" +  '"\n:mode="' + "'all'" + '"\n></vue-responsive-image>  '
+        + line1Text + '<br><br><br>' + line2Text + '</div><br><br><br>' +  
+        '<div class="flagMap"><img src="assets/tx-map.jpg" class="txMap"><br>'
+        // '<vue-responsive-image id="txMap"  \n  :width-on-screen="50" \n  :width-on-screen-tablet="75" \n  :width-on-screen-smartphone="100" \n  :image-url="' + "'/assets/tx-map.jpg'" +   '"\n:image-ratio="' + '16/9' +  '"\n:alt="' + "'test1'" +  '"\n:image-class="' + "'myImg'" +  '"\n:mode="' + "'all'" + '"\n></vue-responsive-image>  '
+        + line3Text + '<br><br><br>' + line4Text + '</div><br><br><br>'
         + '</div>'
     }
     const Facts = {

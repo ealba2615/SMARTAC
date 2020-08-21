@@ -13,8 +13,16 @@
 <body>
     <div id="app">
         <div id="navbar">
-            <router-link to="/about">About</router-link>
-            <router-link to="/facts">Facts</router-link>
+            <a class="navbar-brand" href="/">
+                <div class="logo-image">
+                      <img src="assets/tx-logo.png" class="img-fluid">
+                      <h1 id="logoText">Texas</h1>
+                </div>
+            </a>
+            <div class="navbar-right">
+                <router-link class="rightLinks" to="/about">About</router-link>
+                <router-link class="rightLinks" to="/facts">Facts</router-link>
+            </div>
         </div>
 
         <router-view></router-view>
