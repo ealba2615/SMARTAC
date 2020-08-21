@@ -1,0 +1,30 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+  }
+  h1, h2, h3, p {
+    padding: 5px;
+  }
+  .aboutHeader{
+      /* color: aqua; */
+  }
+  #txFlag{
+      text-align: right;
+  }
+  #txMap{
+      text-align: left;
+  }
+  .myImg {
+    width: 10%;
+  }
+  @media screen and (max-width: 1023px) {
+    .myImg {
+      width: 25%;
+    }
+  }
+  @media screen and (max-width: 767px) {
+    .myImg {
+      width: 40%;
+    }
+  } 

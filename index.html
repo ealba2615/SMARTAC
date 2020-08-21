@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> 
+    <script src="scripts/vue-responsive-image.web.min.js"></script>
+    <script src="https://unpkg.com/vue-router/dist/vue-router.js"></script>
+    <title>Vue Test</title>
+</head>
+<body>
+    <div id="app">
+        <div id="navbar">
+            <router-link to="/about">About</router-link>
+            <router-link to="/facts">Facts</router-link>
+        </div>
+
+        <router-view></router-view>
+
+        <!-- {{ message }}
+
+        <vue-responsive-image
+        :width-on-screen="50"
+        :width-on-screen-tablet="75"
+        :width-on-screen-smartphone="100"
+        :image-url="'/images/testimage.jpg'"
+        :image-ratio="16/9"
+        :alt="'test1'"
+        :image-class="'myImg'"
+        :mode="'all'"
+      ></vue-responsive-image> -->
+    </div>
+    
+    <script src="index.js"></script>
+</body>
+</html>
