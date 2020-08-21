@@ -10,8 +10,7 @@ h1, h2, h3, p {
   float: right;
  }
 .navbar-right .rightLinks{
-  font-size: 20px;
-  background-color: aqua;
+  font-size: 22px;
 }
 #navbar{
   height: 100px;
@@ -37,6 +36,8 @@ h1, h2, h3, p {
 }
 .aboutHeader{
     text-align: center;
+    font-size: 40px;
+    padding-right: 50px;
 }
 
 IMG.txFlag{
@@ -78,9 +79,6 @@ IMG.txSeal{
 }
 
 @media screen and (max-width: 1023px) {
-  .myImg {
-    width: 50%;
-  }
   IMG.txSeal {
     width: 50%;
   }
@@ -106,11 +104,8 @@ IMG.txSeal{
   }
 }
 @media screen and (max-width: 767px) {
-  .myImg {
-    width: 40%;
-  }
   IMG.txSeal {
-    width: 40%;
+    width: 70%;
   }
   IMG.txFlag {
     float: none;
